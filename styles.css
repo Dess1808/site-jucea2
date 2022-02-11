@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*HEAD-GOV*/
+#head-gov{
+    background-color: #008080;
+
+    padding: 8px 0px;
+}
+
+.row-content-links-rodape{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+
+.row-content-links-rodape .logo-amazonas-head img{
+    width: 120px;
+    height: 43px;
+}
+
+/*SEC-HEAD*/
+
+#head-sec{
+    background-color: #20b2aa;
+
+    padding: 8px 0px;
+}
+
+.row-content-head-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo-head-sec h1{
+    color: #fff;
+    font-size: 200%;
+
+    padding: 0px 0px 4px;
+}
+
+.titulo-head-sec h3{
+    color: #fff;
+}
+
+.gold-img-jucea{
+    display: flex;
+
+    width:380px;
+
+    padding: 0px 15px;
+
+    justify-content: right;
+}
+
+
+.pesquisa-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisa-link a img{
+    height: 25px;
+    width: 25px;
+}
+
+.pesquisa-link{
+    padding: 0px 15px;
+
+    width: 300px;   
+}
+
+.pesquisa-link .icons-rede{
+    padding: 20px 0px 0px;
+
+    text-align: right;
+}
+
+.pesquisa-link input{
+    height: 25px;
+
+    padding: 15px;
+
+    border-style: none;
+    border-radius: 15px;
+}
+
+/*MENU PRINCIPAL*/
+
+.head-menu{
+    background-color: #fff;
+}
+
+.head-meu .row-content-menu{
+    width: 11440px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
