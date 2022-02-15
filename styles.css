@@ -23,7 +23,7 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    width: 1140px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;   
 }
@@ -47,7 +47,7 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    width: 1140px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -114,7 +114,7 @@ body{
 #head-menu .navbar-menu{
     display: flex;
 
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 
     padding: 0;
@@ -160,17 +160,239 @@ body{
 }
 
 #content-main{
+    max-width: 1140px;
+
     margin-left: auto;
     margin-right: auto;
-}
-
-/* widgth SLIDE*/
-
-#content-main .slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
 
     display: flex;
 }
 
+/* widgth SLIDE*/
+
+/*diminuir depois*/
+.slider{
+    width: 610px;
+    height: 484px;
+    border-radius: 10px;
+    margin-top: 36px;
+    
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/*MANUAL NAVIGATION*/
+
+.manual-navigation{
+    position: absolute;
+
+    width: 16px;
+    height: 117px;
+    margin-top: -297px;
+    margin-left: 585px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.manual-btn{
+    border: 2px solid#00BFFF;
+    padding: 5px;
+    border-radius: 10px;
+    width: 0;
+    cursor: pointer;
+    transition: 1s
+}
+
+.manual-btn:not(:first-child){
+    margin-top: 20px;     
+}
+
+.manual-btn:hover{
+    background: #00BFFF;
+}
+
+/*CHECKED MANUAL NAVIGATION*/
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+/*AUTOMATIC NAVIGATION - teste*/
+
+.automatic-navigation{
+    position: absolute;
+
+    width: 16px;
+    height: 117px;
+    margin-top: -297px;
+    margin-left: 585px;
+
+    display: flex;
+    flex-direction: column;   
+}
+
+.automatic-navigation div{
+    border: 2px solid#00BFFF;
+    padding: 5px;
+    border-radius: 10px;
+    width: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.automatic-navigation div:not(:first-child){
+    margin-top: 20px;
+}
+
+/*CHECKED automatic navigation - teste*/
+#radio1:checked ~ .automatic-navigation .auto-btn1{
+    background: #00BFFF;
+}
+
+#radio2:checked ~ .automatic-navigation .auto-btn2{
+    background: #00BFFF;
+}
+
+#radio3:checked ~ .automatic-navigation .auto-btn3{
+    background: #00BFFF;
+}
+
+#radio4:checked ~ .automatic-navigation .auto-btn4{
+    background: #00BFFF;
+}
+
+
+/*WIDGET Slide-Lateral*/
+.widget-slide-lateral{
+    height: 484px;
+    width: 175px;
+    padding:0;
+
+    margin-top: 38px;
+    margin-left: 20px;
+
+    list-style: none;
+}
+
+.widget-slide-lateral li{
+    height: 114px;
+    width: 175px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: end;
+}
+
+.widget-slide-lateral li:not(:first-child)
+{
+    margin-top: 8px;;
+}
+
+.widget-slide-lateral li img{
+    height: 114px;
+    width: 175px;
+
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+.widget-slide-lateral li span{
+    position: absolute;
+
+    text-align: left;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+
+    max-height: 114px;
+    max-width: 165px;
+}
+
+/*Css FAVORITOS*/
+.links-favoritos{   
+    max-height: 466px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transform: translate(39%, 8%);
+}
+
+.links-favoritos .portal-covid{
+    max-width: 178px;
+    max-height: 90px;
+}
+
+.links-favoritos .favoritos{
+    list-style: none;
+}
+
+.links-favoritos h4{
+    padding: 5px;
+}
+
+.links-favoritos .favoritos li{
+    padding: 5px;
+}
+
+.links-favoritos .favoritos li a{
+    font-size: 110%;
+}
+
+.links-favoritos .portal-covid img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.links-favoritos .portal-covid{
+    transform: translateX(22%);
+}
+
+.links-favoritos label{
+    background: #fff;
+    padding: 5px;
+
+    border-radius: 10px;
+}

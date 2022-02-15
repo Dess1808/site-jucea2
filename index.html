@@ -109,12 +109,21 @@
                     <!--radio input end-->
 
                     <!--slid img start-->
-                    <div class="slide fisrt"><img src="./img/img1.png" alt=""></div>
+                    <div class="slide first"><img src="./img/img1.png" alt=""></div>
                     <div class="slide"><img src="./img/img2.png" alt=""></div>
                     <div class="slide"><img src="./img/img3.png" alt=""></div>
                     <div class="slide"><img src="./img/img4.png" alt=""></div>
                     <!--slid img end-->
                 </div>
+
+                <!--automatic navigation start-->
+                <div class="automatic-navigation">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
 
                 <!--manual navigation start-->
                 <div class="manual-navigation">
@@ -124,12 +133,58 @@
                     <label for="radio4" class="manual-btn"></label>
                 </div>
                 <!--manual navigation end-->   
+
             </div>
             <!--widget slide end-->
+
+            <!--widget slide lateral start-->
+            <ul class="widget-slide-lateral">
+                <li><img src="./img/img1.png"><span>Lorem Ipsum is simply dummy, gabriel souza martins</span></li>
+                <li><img src="./img/img2.png"><span>Contrary to popular belief</span></li>
+                <li><img src="./img/img3.png"><span>Lorem Ipsum is not simply random text<span></span></li>
+                <li><img src="./img/img4.png"><span>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested<span></span></li>
+            </ul>
+            <!--widget slide lateral end-->
+
+            <!--FAVORITOS start-->
+            <div class="links-favoritos">
+                
+                <label>
+                    <h4>Favoritos</h4>
+                    <ul class="favoritos">
+                        <li><a href="#">1 - Portal de Serviços</a></li>
+                        <li><a href="#">2 - Guia de Pagamentos</a></li>
+                        <li><a href="#">3 - Andamento de Processo</a></li>
+                        <li><a href="#">4 - Validar Documentos</a></li>
+                        <li><a href="#">5 - Assinar Documentos</a></li>
+                        <li><a href="#">6 - Estatísticas</a></li>
+                        <li><a href="#">7 - Links e Serviços</a></li>
+                        <li><a href="#">8 - Tabela de Preços</a></li>
+                        <li><a href="#">9 - Portal de Serviços</a></li>
+                        <li><a href="#">10 - Dúvidas mais frequentes</a></li>
+                    </ul>
+                </label>
+
+                <!--Link para o portal tranparencia-->
+                <div class="portal-covid">
+                    <a href="http://www.transparencia.am.gov.br/covid-19/"><img src="./img/porta-covid.png" alt="portal-covid"></a>
+                </div>
+            </div>
+            <!--FAVORITOS end-->
 
             
 
 
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
         </section>
     </body>
 </html>
