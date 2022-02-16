@@ -397,4 +397,57 @@ body{
     border-radius: 10px;
 }
 
-/*CSS */
+/*CSS WIDGET MIDDLE*/
+.widget-middle{
+    display: flex;
+
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+
+    justify-content: space-between;
+}
+
+.widget-grid img{
+    height: 191px;
+    width: 191px;
+}
+
+
+.widget{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.paginas .titulo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    font-size: 130%;
+}
+
+.tutoriais .titulo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    font-size: 130%;
+}
+
+.pdfs .titulo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    font-size: 130%;
+}
+
+.widget-parceiros{
+    height: 541px;
+    width: 275px;
+}
+
+.widget-parceiros-middle img{
+    height: 80px;
+    width: 210px;
+
+    border-radius: 10px;
+}
