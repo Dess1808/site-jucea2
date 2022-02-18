@@ -490,3 +490,34 @@ body{
 }
 
 /*CSS FLUXO ELABORAÇÃO*/
+.content-fluxo-elaboracao{
+    width: 1140px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fluxo-box{
+    width: 100px;
+}
+
+.fluxo-titulo{
+    background: #696969;
+
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 133px;
+}
+
+.fluxo-titulo h1{
+    font-size: 100%;
+}
+
+.fluxo-titulo img{
+    height: 15px;
+    width: 15px;
+}
