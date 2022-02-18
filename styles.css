@@ -406,18 +406,26 @@ body{
     margin-left: auto;
 
     justify-content: space-between;
+
+    transform: translate(0%, 4%);
 }
 
 .widget-grid img{
     height: 191px;
     width: 191px;
-}
 
+    border-radius: 20px ;
+}
 
 .widget{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 83px;
+    grid-row-gap: 15px;
+
+    margin-bottom: 30px;
 }
+
 
 .paginas .titulo{
     grid-column-start: 1;
@@ -440,9 +448,36 @@ body{
     font-size: 130%;
 }
 
+.widget-only{
+    font-size: 70%;
+    text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+/*widget PARCEIROS*/
 .widget-parceiros{
     height: 541px;
     width: 275px;
+
+    text-align: center;
+
+    transform: translate(-5%, 27%);
+}
+
+.widget-parceiros h1{
+    margin-bottom: 20px;
+
+    font-size: 150%;
+}
+
+.widget-parceiros-middle{
+    text-align: center;
 }
 
 .widget-parceiros-middle img{
@@ -450,4 +485,80 @@ body{
     width: 210px;
 
     border-radius: 10px;
+
+    margin-top: 14px;
 }
+
+/*CSS FLUXO ELABORAÇÃO*/
+
+.fluxo-elaboracao-box{
+    width: 1140px;
+    height: 100vh;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.box-passo{
+    width: 200px;
+    height: 160px;
+}
+
+.box-passo h1{
+    font-size: 100%;
+}
+
+.box-passo .tres-pontos{
+    width: 200px;
+    height: 30px;
+}
+
+.box-detalhe{
+    border: 2px solid silver;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+}
+
+.box-detalhe h2{
+    font-size: 110%;
+
+    padding: 10px;
+}
+
+.box-detalhe .icon-lupa{
+    background: #20b2aa;
+
+    border-radius: 50px 0px 0px 0px;
+
+    width: 1.3em;
+    height: 1.2em;
+
+    padding: 7px 0px 0px 7px;
+}
+
+.box-detalhe img{
+    height: 20px;
+    width: 20px;
+}
+
+.text-detalhe{
+    padding: 20px;
+
+    border: 2px solid silver;
+    background: #fff;
+}
+
+.text-detalhe .text h3{
+    color: red;
+}
+
+.text-detalhe .text ul{
+    list-style: none;
+}
+
