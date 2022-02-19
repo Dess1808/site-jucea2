@@ -498,7 +498,7 @@ body{
 }
 
 .fluxo-box{
-    width: 100px;
+    width: 190px;
 }
 
 .fluxo-titulo{
@@ -508,9 +508,9 @@ body{
     padding: 10px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
-    width: 133px;
+    width: 170px;
 }
 
 .fluxo-titulo h1{
@@ -520,4 +520,67 @@ body{
 .fluxo-titulo img{
     height: 15px;
     width: 15px;
+}
+
+.fluxo-tres-pontos{
+    display: flex;
+    justify-content: center;
+
+    width: 190px;
+    margin-top: 5px;
+}
+
+.box-bolinhas{
+    display: block;
+}
+
+.bolinha{
+    height: 5px;
+    width: 5px;
+
+    border-radius: 50px;
+    background-color: #696969;
+}
+
+.bolinha:not(:first-child){
+    margin-top: 3px;
+}
+
+.fluxo-etapa{
+    font-size: 130%;
+
+    width: 168px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 3px;
+
+    background: #fff;
+    border: 2px solid #696969;
+}
+
+.fluxo-etapa h1{
+    font-size: 113%;
+    padding: 10px 10px 0px 10px;
+}
+
+.box-lupa-etapa{
+    width: 168px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lupa{
+    background: #2E8B57;
+    border-radius: 35px 0px 0px 0px;
+    
+    padding: 3px 0px 0px 3px;
+}
+
+.lupa img{
+    height: 20px;
+    width: 20px;
+
+    transform: translate(3%, 24%);
 }
