@@ -495,7 +495,20 @@ body{
 
     margin-right: auto;
     margin-left: auto;
+
+    margin-top: 100px;
 }
+
+.content-fluxo-elaboracao h2{
+    font-size: 120%;
+    padding-bottom: 10px;
+}
+
+.box-inside-fluxo{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .fluxo-box{
     width: 190px;
@@ -510,11 +523,16 @@ body{
     display: flex;
     justify-content: center;
 
-    width: 170px;
+    border-radius: 5px;
 }
 
 .fluxo-titulo h1{
     font-size: 100%;
+}
+
+.seta img{
+    height: 38px;
+    width: 38px;
 }
 
 .fluxo-titulo img{
@@ -549,7 +567,9 @@ body{
 .fluxo-etapa{
     font-size: 130%;
 
-    width: 168px;
+    width: 188px;
+    height: 97px;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -557,6 +577,21 @@ body{
 
     background: #fff;
     border: 2px solid #696969;
+
+    transition: 0.1s;
+
+    font-size: 100%;
+
+    border-radius: 5px;
+}
+
+.box-etapa{
+    height: 112px;
+    width: 185px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .fluxo-etapa h1{
@@ -569,6 +604,8 @@ body{
 
     display: flex;
     justify-content: flex-end;
+
+    transform: translate(12%, -54%);
 }
 
 .lupa{
@@ -583,4 +620,63 @@ body{
     width: 20px;
 
     transform: translate(3%, 24%);
+}
+
+
+.informacoes-text{
+    position: absolute;
+    visibility: hidden;
+
+    transition: 0.1s;
+
+    width: 1094px;
+    height: 6em;
+
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #696969;
+
+    margin-top: 110px;
+
+    border-radius: 5px;
+}
+
+.informacoes-text h3{
+    color: red;
+    padding-bottom: 10px;
+}
+
+.fluxo-etapa:hover{
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.fluxo-etapa:hover .informacoes-text{
+    visibility: visible;
+}
+
+.passo1 .informacoes-text{
+    transform: translateX(0px);
+}
+
+.passo2 .informacoes-text{
+    transform: translateX(-237px);
+}
+
+.passo3 .informacoes-text{
+    transform: translateX(-475px);
+}
+
+.passo4 .informacoes-text{
+    transform: translateX(-712px);
+}
+
+.passo5 .informacoes-text{
+    transform: translateX(-950px);
+}
+
+
+.bloco{
+    width: 200px;
+    height: 300px;
 }
