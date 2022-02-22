@@ -782,3 +782,145 @@ body{
 .content-social-media img:hover{
     box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
 }
+
+/*CSS RODAPE BAIXO TOP*/
+.content-rodape-baixo-top{
+    padding: 10px;
+    background: #20b2aa;
+    margin-top: 50px;
+}
+
+.box-row-rodape-top{
+    display: flex;
+
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.box-rodape{
+    display: flex;
+    width: 324px;
+
+    align-items: center;
+    justify-content: flex-start ;
+}
+
+.telefone img{
+    width: 24px;
+    height: 24px;
+
+    padding-right: 10px;
+}
+
+.acessibilidade{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.box-rodape p{
+    margin-right: 10px;
+}
+
+.box-rodape button{
+    border: 2px solid rbg(0,0,0);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/*CSS RODAPE BAIXO BAIXO*/
+#content-rodape-baixo-down{
+    background: #008080;
+}
+
+.box-row-rodape-down{
+    display: flex;
+    justify-content: space-between;
+
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-top: 20px;
+}
+
+.box-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media{
+    padding: 10px 0px 10px 0px;
+}
+
+.social-media a{
+    text-decoration: none;
+}
+
+.social-media a img{
+    width: 24px;
+    height: 24px;
+}
+
+.endereco h5{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+
+.endereco h6{
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.endereco p{
+    font-size: .875rem;
+    margin-bottom: 5px;
+}
+
+.endereco{
+    color: #fff;
+}
+
+.ver-mapa{
+    width: 125px;
+    background: #17a2b8;
+    
+    color: #fff;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+
+.ver-mapa:hover{
+    background-color: rgba(23,162,184,.5)
+}
+
+
+.ver-mapa img{
+    width: 14px;
+    height: 14px;
+
+    padding-right: 5px;
+}
+
+.box-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-left img{
+    width: 192px;
+    height: 69px;
+}
