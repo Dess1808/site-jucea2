@@ -2,7 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles/home.css">
+        <link rel="stylesheet" href="./styles/carousel.css">
+        <link rel="stylesheet" href="./js/carousel.js">
     </head>
     <body>
         <section id="head-gov">
@@ -99,53 +101,46 @@
         <section id="content-main">
 
             <!--widget slider start-->
-            <div class="slider">
-                <div class="slides">
-                    <!--radio input start-->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!--radio input end-->
+            <div class="carousel">
+                <button class="carousel-button carousel-button--right">
+                    <img src="./img/icons/right-arrow.png" alt="">
+                </button>
 
-                    <!--slid img start-->
-                    <div class="slide first"><img src="./img/img1.png" alt=""></div>
-                    <div class="slide"><img src="./img/img2.png" alt=""></div>
-                    <div class="slide"><img src="./img/img3.png" alt=""></div>
-                    <div class="slide"><img src="./img/img4.png" alt=""></div>
-                    <!--slid img end-->
+                <div class="carousel-track-container">
+                   <ul class="carousel-track">
+                       <li class="carousel-slide current-slide">
+                            <img class="carousel-img" src="./img/img1.png" alt="">
+                       </li>
+
+                        <li class="carousel-slide">
+                            <img class="carousel-img" src="./img/img2.png" alt="">
+                        </li>
+
+                        <li class="carousel-slide">
+                            <img class="carousel-img" src="./img/img3.png" alt="">
+                        </li>
+
+                        <li class="carousel-slide">
+                            <img class="carousel-img" src="./img/img4.png" alt="">
+                        </li>
+                   </ul>
                 </div>
 
-                <!--automatic navigation start-->
-                <div class="automatic-navigation">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                <!--automatic navigation end-->
+                <button class="carousel-button carousel-button--left">
+                    <img src="./img/icons/left-arrow.png" alt="">
+                </button>
 
-                <!--manual navigation start-->
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
+                 <!--start INDICATORS-->
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
                 </div>
-                <!--manual navigation end-->   
-
+                <!--end INDICATORS-->
             </div>
-            <!--widget slide end-->
+            <!--widget CAROUSEL end-->
 
-            <!--widget slide lateral start-->
-            <ul class="widget-slide-lateral">
-                <li><img src="./img/img1.png"><span>Lorem Ipsum is simply dummy, gabriel souza martins</span></li>
-                <li><img src="./img/img2.png"><span>Contrary to popular belief</span></li>
-                <li><img src="./img/img3.png"><span>Lorem Ipsum is not simply random text<span></span></li>
-                <li><img src="./img/img4.png"><span>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested<span></span></li>
-            </ul>
-            <!--widget slide lateral end-->
-
+        
             <!--FAVORITOS start-->
             <div class="links-favoritos">
                 
@@ -545,15 +540,6 @@
 
 
 
-        <script type="text/javascript">
-            var counter = 1;
-            setInterval(function(){
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if(counter > 4){
-                    counter = 1;
-                }
-            }, 5000);
-        </script>
+    
     </body>
 </html>
