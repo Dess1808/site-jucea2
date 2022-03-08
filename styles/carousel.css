@@ -1,8 +1,8 @@
 .carousel{
     position: relative;
-    height: 470px;
+    height: 457px;
     width: 60%;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .carousel-img{
@@ -27,7 +27,7 @@
     transition: transform 250ms ease-in;
 }
 
-.corousel-slide{
+.carousel-slide{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -47,7 +47,7 @@
 .carousel-button img{
     width: 50px;
     border-radius: 50%;
-    background-color: rba(0,0,0,.3);
+    background-color: rgba(0,0,0,.3);
     padding: 10px;
 }
 
@@ -78,5 +78,3 @@
 .carousel-indicator.current-slide{
     background: rgba(0,0,0,.75);
 }
-
-.is-hidden{display: none;}

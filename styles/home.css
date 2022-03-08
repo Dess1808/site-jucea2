@@ -153,6 +153,8 @@ body{
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 2;
 }
 
 .navbar-menu li:hover .navbar-submenu{
@@ -350,7 +352,7 @@ diminuir depois
 
     justify-content: space-between;
 
-    transform: translate(39%, 8%);
+    transform: translate(0%, 8%);  
 }
 
 .links-favoritos .portal-covid{
