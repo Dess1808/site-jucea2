@@ -2,7 +2,7 @@
     position: relative;
     height: 457px;
     width: 60%;
-    margin: 40px auto;
+    margin: 40px auto;   
 }
 
 .carousel-img{
@@ -47,7 +47,6 @@
 .carousel-button img{
     width: 50px;
     border-radius: 50%;
-    background-color: rgba(0,0,0,.3);
     padding: 10px;
 }
 
