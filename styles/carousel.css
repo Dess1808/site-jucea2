@@ -52,11 +52,11 @@
 }
 
 .carousel-button--left{
-    left: -80px;
+    left: 0px;
 }
 
 .carousel-button--right{
-    right: -80px;
+    right: 0px;
 }
 
 .carousel-nav{
