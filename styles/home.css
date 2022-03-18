@@ -675,8 +675,9 @@ diminuir depois
 .informacoes-text{
     position: absolute;
     visibility: hidden;
+    opacity: 0;
 
-    transition: 0.1s;
+    transition: 0.1s ease-in;
 
     width: 1094px;
     height: 6em;
@@ -702,6 +703,7 @@ diminuir depois
 
 .fluxo-etapa:hover .informacoes-text{
     visibility: visible;
+    opacity: 1;
 }
 
 .passo1 .informacoes-text{
@@ -779,11 +781,13 @@ diminuir depois
 
     align-items: center;
 
-    transition: 0.1s
+    transition: 0.1s;
+
+    border-radius: 5px;
 }
 
 .box-empresa:hover{
-    background: rgba(0, 0, 0, 0.3);
+    background-color: rgba(23,162,184,.5);
 }
 
 .box-empresa:hover .box-empresa h1{
@@ -799,7 +803,7 @@ diminuir depois
 }
 
 .box-empresa a:hover{
-    text-decoration:underline;
+    /*text-decoration:underline;*/
     color: #fff;
 }
 
@@ -953,7 +957,7 @@ diminuir depois
 }
 
 .ver-mapa:hover{
-    background-color: rgba(23,162,184,.5)
+    background-color: rgba(23,162,184,.5);
 }
 
 
