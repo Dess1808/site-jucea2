@@ -169,6 +169,7 @@ body{
     margin-right: auto;
 
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -346,7 +347,7 @@ diminuir depois
 /*Css Links Img*/
 .links-img-favoritos{
     position: relative;
-    width: 400px;
+    width: 336px;
 
     display: flex;
     flex-direction: column;
@@ -406,11 +407,29 @@ diminuir depois
     font-size: 130%;
 }
 
+.tutoriais{
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+
 .tutoriais .titulo{
     grid-column-start: 1;
     grid-column-end: 4;
 
     font-size: 130%;
+    text-align: center;
+    width: 191px;
+}
+
+.tutoriais .titulo h2{
+    font-size: 70%;
+}
+
+.tutoriais .widget-only img{
+    width: 463px;
+    object-fit: cover;
 }
 
 .pdfs .titulo{
@@ -430,6 +449,59 @@ diminuir depois
     justify-content: center;
 
     text-align: center;
+
+    cursor: pointer;
+    
+}
+
+.widget-only img{
+    transition: 0.1s ease; 
+}
+
+.widget-only img:hover{
+    box-shadow: 24px 16px rgba(0,0,0,.3);
+}   
+
+/*widget-column-right*/
+.widget-column-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.favoritos{
+    height: 313px;
+    justify-content: space-between;
+}
+
+.favoritos h1{
+    font-size: 160%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.favoritos-lista{
+    list-style: none;
+    font-size: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.favoritos-lista li{
+    padding-bottom: 8px;
+}
+
+.favoritos-lista li:last-child{
+    padding-bottom: 0;
+}
+
+.favoritos-lista li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.favoritos-lista li a:hover{
+    color: dodgerblue;
 }
 
 /*widget PARCEIROS*/
@@ -438,13 +510,11 @@ diminuir depois
     width: 275px;
 
     text-align: center;
-
-    transform: translate(-5%, 27%);
+    padding-top: 19px;
 }
 
 .widget-parceiros h1{
-    margin-bottom: 20px;
-
+    padding-bottom: 10px;
     font-size: 150%;
 }
 
@@ -452,14 +522,21 @@ diminuir depois
     text-align: center;
 }
 
-.widget-parceiros-middle img{
-    height: 80px;
-    width: 210px;
+.widget-parceiros-middle a img{
+    height: 58px;
+    width: 185px;
 
     border-radius: 10px;
 
     margin-top: 14px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
 }
+
+.widget-parceiros-middle img:hover{
+    box-shadow: 0 2px 25px rgba(0,0,0,.3);
+}
+
 
 /*CSS FLUXO ELABORAÇÃO*/
 .content-fluxo-elaboracao{

@@ -1,9 +1,11 @@
 Requisicoes alteracao site:
 
-[ ] - Mudar conteudo (Rede sim) 
-[ ] - Mudar conteudo da (Implatacao Rede Sim)
-[ ] - Colocar Cartilha Digital No site 
+[ ] - Atualizar conteudo (Rede sim) 
+[ ] - Atualizar conteudo da (Implatacao Rede Sim)
+
+[ ] - Colocar Cartilha Digital No site "que cartilha e essa?"
 [ ] - sessao "tutoriais" juntando os botoes em 1 so
+
 [ ] - Atualizar conteudo pagina > manuais
 [ ] - Atualizar conteudo PDF > Registro
 [ ] - fazer botao "legislacao" (color tudo que for lesgilacao)
@@ -11,5 +13,4 @@ Requisicoes alteracao site:
     - decreto 1.800
     - lesgilacao rede sim
     - Rede Sim
-
-
+    "onde colocar este botão lesgilacao???"
